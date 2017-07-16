@@ -1,4 +1,6 @@
-# StreamCaptureNonProgrammers
+				**********************************
+				** Thank you for reading this!  ** 
+				**********************************
 
 All credit goes to markwilkie! I just took all his hard work and made it a bit more user friendly. 
 Everything here assumes windows 10, 64bit. It will probably work on other windows environments, but no promises. 
@@ -10,11 +12,103 @@ You will need to edit these two files:
 \bin\appsettings.json
 \bin\keywords.json
 
-After setup (editing the two files), you can start the program by clicking run.bat.
+You will need to create these folders:
+\bin\recordings
+\bin\logs
+\bin\working 
+
+After setup, you can start the program by clicking run.bat.
 
 You can access the gui (while the program is running) at:
 http://localhost:5000/home
 
 Your finished (published) recordings will be placed in \ScreenCapture\bin\recordings folder
 
-More detailed instructions can be found in Instructions - READ FIRST.txt
+				************************
+				**  appsettings.json  **
+				************************
+				
+You need to edit the following fields, and there are comments in the code to help you. 
+I recommend you use notepad++ as it does color coding which makes it a lot easier to edit this stuff. 
+Go to the bin folder and find appsettings.json. Open it up and make changes as noted below. 
+
+  "user": put your streaming username (same you use to log into the website, kodi, app, etc)
+  
+  "pass": put your streaming password
+  
+  "scheduleCheck": "01,10,14,19",
+  
+  "schedTimeOffset": time difference from EST/EDT, so if you are in LA, this is -3. If you are in London this is +5
+  
+  "concurrentCaptures": enter the maximum number of concurrent captures (consider your internet speed)
+  
+  "additionalStarredCaptures": number of extra captures for starred events 
+  
+  "retentionDays": number of days you want to keep recordings (consider your hard drive size)
+  
+  "scheduleURL": leave this as it is if you will just be recording sports. if you want general TV, you can change it.
+  
+  "authURL": the bit where it has "viewms" change if you use a different service (see list of hosts below)
+  
+  "captureCmdLine": the bit where it has "viewms" change if you use a different service (see list of hosts below)
+  
+  "serverList": list of servers here, you dont *need* to change this, but you probably should (see list of Servers below)
+  
+  "mailAddress": your email address (where you want emails to be sent)
+  
+  "smtpServer": smpt server of SENDING email address - you *should* change this to your own email
+  
+  "smtpPort": port of SENDING email address - you *should* change this to your own email
+  
+  "smtpUser": SENDING email address - you *should* change this to your own email
+  
+  "smtpPass": SENDING email address password - you *should* change this to your own email
+
+				**********************
+				**  Refrence Lists  **
+				**********************
+servers 
+        'Asia Random':                      'dap',
+        'Europe NL1 (Amsterdam)':           'deu-nl1',
+        'Europe NL2 (Amsterdam)':           'deu-nl2',
+        'Europe NL3 (Amsterdam)':           'deu-nl3',
+        'Europe NL Random':                 'deu-nl',
+        'Europe UK1 (io)':                  'deu-uk1',
+        'Europe UK2 (100TB)':               'deu-uk2',
+        'Europe UK Random':                 'deu-uk',
+        'Europe Random':                    'deu',
+        'USA/Canada East 1 (New Jersey)':   'dnae1',
+        'USA/Canada East 2 (Virginia)':     'dnae2',
+        'USA/Canada East 3 (Montreal)':     'dnae3',
+        'USA/Canada East 4 (Toronto)':      'dnae4',
+        'USA/Canada East Random':           'dnae',
+        'USA/Canada West 1 (Phoenix, AZ)':  'dnaw1',
+        'USA/Canada West 2 (San Jose, CA)': 'dnaw2',
+        'USA/Canada West Random':           'dnaw',
+        'USA/Canada Random':                'dna'
+
+hosts
+        'Live247':     'view247',
+        'MyStreams':   'viewms',
+        'StarStreams': 'viewss',
+        'StreamTVNow': 'viewstvn'
+
+				*********************
+				**  keywords.json  **
+				*********************
+Copied from offical readme... I think these are good instructions on how to use it:
+
+Top level node: name of whatever you want to name the "grouping". This is arbitrary and doesn't affect anything programatically.
+"starredFlag": when 'true', this will annotate the file so you can see it better as well as use additional concurrent slots if desired.
+"emailFlag": when 'true', an email is sent when capture is started and published for this keyword group
+"keywords": array of keywords. Each string in the array is comma delimmted and is ANDed together, and each seperate string in the array is OR'd together. In addition, Regular expressions are supported. For example, {"a,b","c","d"} == '(a AND B) || c || d'
+"exclude": same as with keywords, but are exclusions.
+"categories": same as with keywords, but matching against the smoothstream categories. These are AND'd with keywords. Use double quotes to include "everything".
+"preMinutes": number of minutes to start early by
+"postMinutes": number of minutes to record past the end time by (useful for potential overtime games)
+"langPref": used to order the channels by. (which one to try first, and then 2nd of there's a problem etc) For example, I use "US" to get the english channels ahead of "DE". Note that the channel priority list in found in the log if you're curious.
+"qualityPref": also used to order channels. I use "720p" so it tries to get HD first. (actually, I use 1080i now...)
+"channelPref": support channel number preference
+Please note that the order in which you put the groups is important as this is the order in which the shows will be scheduled. This means that you want to put the stuff you care about the most first for when there are too many concurrent shows For example, I put keywords for my favorite EPL teams first, and then put a general "EPL" towards the bottom. That way, it'll make sure my favorite teams get priority, but if there is "room", it'll fit other EPL games in opportunistically.
+
+Scoring: If you put one or more '+' and '-' signs in any of your preferences, it will affect which channel is chosen. (there are preferences for language, quality, and channel) For example, if you put '+US' for language, then when caculating the "score" for a channel, US will be worth +1 higher. Same is true for '-'. You can put multiple + or -. Basically, a "score" is determined for each channel. This score is what is used to determine which order the channels are tried in. This should allow you to configure things such that your preferences are respected, but the show will get recorded regardless. In other words, preferences are just that - preferences for what to grab first.
