@@ -1,0 +1,12 @@
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\release\netcoreapp1.1\win10-x64\appsettings.json
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\release\netcoreapp1.1\win10-x64\hostpolicy.dll
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\release\netcoreapp1.1\win10-x64\hostfxr.dll
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\release\netcoreapp1.1\win10-x64\StreamCapture.exe
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\release\netcoreapp1.1\win10-x64\StreamCapture.deps.json
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\release\netcoreapp1.1\win10-x64\StreamCapture.runtimeconfig.json
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\release\netcoreapp1.1\win10-x64\StreamCapture.runtimeconfig.dev.json
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\release\netcoreapp1.1\win10-x64\StreamCapture.dll
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\release\netcoreapp1.1\win10-x64\StreamCapture.pdb
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\obj\release\netcoreapp1.1\win10-x64\StreamCapture.AssemblyInfo.cs
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\obj\release\netcoreapp1.1\win10-x64\StreamCapture.dll
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\obj\release\netcoreapp1.1\win10-x64\StreamCapture.pdb

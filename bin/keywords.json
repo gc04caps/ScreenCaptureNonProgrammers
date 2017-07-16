@@ -1,0 +1,71 @@
+{
+  "Soccer1": {
+    "starredFlag": true, "emailFlag": true,    
+    "keywords": [
+      "Borussia Dortmund",
+      "real madrid",
+      "barcelona",
+      "dc united",
+      "chelsea",
+      "d.c. united",
+	  "Arsenal"
+      ],
+    "exclude": ["colombiano","colombian","Paulista","youth","u23","u22","u21","u20","u19"],
+    "categories": ["world football"],
+    "preMinutes": 0,"postMinutes": 15,
+    "langPref": "+us,ca,uk,-de,-es",
+    "qualityPref": "+1080I,720p,-HQLQ",
+    "channelPref": ""    
+  },
+  "Soccer2": {
+    "starredFlag": true, "emailFlag": true,    
+    "keywords": [
+      "bayern",
+      "manchester united",
+      "tottenham",
+      "Manchester City"
+    ],
+    "exclude": [],
+    "categories": ["world football"],
+    "preMinutes": 0,"postMinutes": 15,
+    "langPref": "+us,ca,uk,-de,-es",
+    "qualityPref": "+1080I,720p,-HQLQ",
+    "channelPref": ""    
+  },
+  "Soccer Tournaments": {
+    "starredFlag": false, "emailFlag": true,    
+    "keywords": [
+      "UCL:",
+      "UEFA",
+      "FA Cup",
+      "CONCACAF",
+      "WCQ:",
+      "WC"
+      ],
+    "exclude": [
+      "sky90",
+      "Konferenz",
+      "Alle Spiele",
+      "skating",
+	  "Women's",
+	  "Women"
+      ],
+    "categories": ["world football"],
+    "preMinutes": 0, "postMinutes": 15,
+    "langPref": "+us,ca,uk,-de,-es",
+    "qualityPref": "+1080I,720p,-HQLQ",
+    "channelPref": ""    
+  },
+
+   "EPL": {
+    "starredFlag": false, "emailFlag": true,    
+    "keywords": ["epl:"],
+    "exclude": [],
+    "categories": [],
+    "preMinutes": 0,
+    "postMinutes": 15,
+    "langPref": "+us,ca,uk,-de,-es",
+    "qualityPref": "+1080I,720p,-HQLQ",
+    "channelPref": ""    
+  }
+} 

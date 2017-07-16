@@ -1,0 +1,9 @@
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\Debug\netcoreapp1.1\appsettings.json
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\Debug\netcoreapp1.1\StreamCapture.deps.json
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\Debug\netcoreapp1.1\StreamCapture.runtimeconfig.json
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\Debug\netcoreapp1.1\StreamCapture.runtimeconfig.dev.json
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\Debug\netcoreapp1.1\StreamCapture.dll
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\bin\Debug\netcoreapp1.1\StreamCapture.pdb
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\obj\Debug\netcoreapp1.1\StreamCapture.AssemblyInfo.cs
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\obj\Debug\netcoreapp1.1\StreamCapture.dll
+C:\Users\chris\Downloads\StreamCapture-master\StreamCapture-master\obj\Debug\netcoreapp1.1\StreamCapture.pdb
