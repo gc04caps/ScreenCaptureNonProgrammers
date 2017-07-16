@@ -8,13 +8,23 @@ Everything here assumes windows 10, 64bit. It will probably work on other window
 See the official readme for more information:
 https://github.com/markwilkie/StreamCapture/blob/master/README.md
 
+
+				********************
+				**  Setup Summary **
+				********************
+
 You will need to edit these two files:
+
 \bin\appsettings.json
+
 \bin\keywords.json
 
 You will need to create these folders:
+
 \bin\recordings
+
 \bin\logs
+
 \bin\working 
 
 After setup, you can start the program by clicking run.bat.
